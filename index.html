@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BELLA BUSINESS CENTER</title>
 
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
+<style>
 body {
-  font-family: 'Segoe UI', Arial;
+  font-family: 'Montserrat', Arial, sans-serif;
   margin: 0;
   background: linear-gradient(135deg, #0b3d0b, #1f7a1f);
   color: white;
@@ -17,12 +18,13 @@ body {
 .container {
   max-width: 480px;
   margin: auto;
-  padding: 15px;
+  padding: 20px;
 }
 
 /* HEADER */
 .header {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .header img {
@@ -30,143 +32,162 @@ body {
 }
 
 .header h1 {
-  margin: 5px 0;
-  font-size: 20px;
+  margin: 10px 0;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .badge {
   background: gold;
   color: black;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
   font-weight: bold;
+  display: inline-block;
+}
+
+/* URGENCE */
+.urgence {
+  background: #e74c3c;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 /* PROMO */
 .promo {
   background: linear-gradient(45deg, gold, orange);
   color: black;
-  padding: 18px;
+  padding: 20px;
   border-radius: 15px;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  margin: 20px 0;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* URGENCE */
-.urgence {
-  background: red;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-/* CARD */
+/* SERVICES */
 .card {
   background: rgba(255,255,255,0.1);
-  padding: 15px;
+  padding: 20px;
   border-radius: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
-/* BUTTONS */
+/* BOUTONS */
 .btn {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 16px;
-  border-radius: 14px;
-  margin-bottom: 12px;
+  gap: 15px;
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 15px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.xbet { background: #1f7ae0; }
-.betwinner { background: #0a3d62; }
-.melbet { background: gold; color: black; }
-.support { background: #e74c3c; }
-.map { background: #2ecc71; }
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
 
-/* ICON */
+/* LOGOS DANS BOUTONS */
 .btn img {
-  width: 30px;
+  height: 60px;
+  width: auto;
   background: white;
-  padding: 4px;
-  border-radius: 6px;
+  padding: 6px;
+  border-radius: 10px;
+  object-fit: contain;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.btn:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Couleurs spécifiques */
+.xbet { background: #1f7ae0; color: white; }
+.betwinner { background: #0a3d62; color: white; }
+.melbet { background: gold; color: black; }
+.support { background: #e74c3c; color: white; }
+.map { background: #2ecc71; color: white; }
+
+/* FOOTER */
 .footer {
   text-align: center;
   font-size: 12px;
-  margin-top: 20px;
+  margin-top: 30px;
+  line-height: 1.5;
 }
-
 </style>
 </head>
-
 <body>
 
 <div class="container">
 
-<!-- HEADER -->
-<div class="header">
-  <img src="bella-logo.png">
-  <h1>BELLA BUSINESS CENTER</h1>
-  <div class="badge">🔥 Le centre des gagnants - Depots et Retraits rapides 🔥</div>
-</div>
+  <!-- HEADER -->
+  <div class="header">
+    <img src="bella-logo.png" alt="Logo BELLA">
+    <h1>BELLA BUSINESS CENTER</h1>
+    <div class="badge">🔥 Centre des gagnants – Dépôts & Retraits rapides 🔥</div>
+  </div>
 
-<!-- URGENCE -->
-<div class="urgence">
-⚡ Service actif maintenant – Réponse immédiate ⚡
-</div>
+  <!-- URGENCE -->
+  <div class="urgence">
+    ⚡ Service actif maintenant – Réponse immédiate ⚡
+  </div>
 
-<!-- PROMO -->
-<div class="promo">
-🎁 CODE PROMO : BBC84
-</div>
+  <!-- PROMO -->
+  <div class="promo">
+    🎁 CODE PROMO : BBC84
+  </div>
 
-<!-- SERVICES -->
-<div class="card">
-✔ Paris sportifs<br>
-✔ Dépôt & Retrait Mobile Money<br>
-✔ Achat/Vente Crypto<br>
-✔ Assistance rapide 24/7
-</div>
+  <!-- SERVICES -->
+  <div class="card">
+    ✔ Paris sportifs<br>
+    ✔ Dépôt & Retrait Mobile Money<br>
+    ✔ Achat/Vente Crypto<br>
+    ✔ Assistance rapide 24/7
+  </div>
 
-<!-- BOUTONS -->
-<a class="btn xbet" href="https://wa.me/22604323254?text=Bonjour%20je%20veux%20recharger%201xbet">
-  <img src="1xbet-logo.png"> 1XBET
-</a>
+  <!-- BOUTONS AMÉLIORÉS -->
+  <a class="btn xbet" href="https://wa.me/22604323254?text=Bonjour%20je%20veux%20recharger%201xbet">
+    <img src="1xbet-logo.png" alt="1XBET"> 1XBET
+  </a>
 
-<a class="btn betwinner" href="https://wa.me/22656034416?text=Bonjour%20je%20veux%20recharger%20Betwinner">
-  <img src="betwinner-logo.png"> BETWINNER
-</a>
+  <a class="btn betwinner" href="https://wa.me/22656034416?text=Bonjour%20je%20veux%20recharger%20Betwinner">
+    <img src="betwinner-logo.png" alt="Betwinner"> BETWINNER
+  </a>
 
-<a class="btn melbet" href="https://wa.me/22606828287?text=Bonjour%20je%20veux%20recharger%20Melbet">
-  <img src="Melbet-logo.png"> MELBET
-</a>
+  <a class="btn melbet" href="https://wa.me/22606828287?text=Bonjour%20je%20veux%20recharger%20Melbet">
+    <img src="Melbet-logo.png" alt="Melbet"> MELBET
+  </a>
 
-<a class="btn support" href="https://wa.me/22674252025?text=Bonjour%20j'ai%20besoin%20d'aide">
-  📞 Assistance Client
-</a>
+  <a class="btn support" href="https://wa.me/22674252025?text=Bonjour%20j'ai%20besoin%20d'aide">
+    📞 Assistance Client
+  </a>
 
-<!-- GEOLOCALISATION -->
-<a class="btn map" href="https://maps.app.goo.gl/ii1jdBjqQhXGXLHh7?g_st=awb">
-  📍 Localisation de la boutique (Google Maps)
-</a>
+  <!-- GEOLOCALISATION -->
+  <a class="btn map" href="https://maps.app.goo.gl/ii1jdBjqQhXGXLHh7?g_st=awb">
+    📍 Localisation de la boutique (Google Maps)
+  </a>
 
-<!-- FOOTER -->
-<div class="footer">
-📍 Bobo-Dioulasso, Ouagadougou<br>
-🔥 +500 clients satisfaits<br>
-BELLA BUSINESS CENTER – Votre partenaire fiable
-</div>
+  <!-- FOOTER -->
+  <div class="footer">
+    📍 Bobo-Dioulasso, Ouagadougou<br>
+    🔥 +500 clients satisfaits<br>
+    BELLA BUSINESS CENTER – Votre partenaire fiable
+  </div>
 
 </div>
 
